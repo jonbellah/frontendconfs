@@ -387,6 +387,22 @@ const confs2018 = [
     coc: 'http://jazzcon.tech/#inline-content',
   },
   {
+    name: 'VueConf.US',
+    link: 'http://us.vuejs.org/',
+    organization: false,
+    startDate: 'March 26, 2018',
+    endDate: 'March 28, 2018',
+    location: {
+      city: 'New Orleans',
+      state: 'Louisiana',
+      country: 'USA',
+      continent: 'North America',
+    },
+    cfpDeadline: 'December 1, 2017',
+    travel: 'Yes',
+    coc: 'http://us.vuejs.org/codeofconduct',
+  },
+  {
     name: '#PerfMatters',
     link: 'https://perfmattersconf.com/',
     organization: false,
