@@ -243,6 +243,22 @@ const confs2018 = [
     coc: 'https://devnexus.com/code-of-conduct',
   },
   {
+    name: 'LoopConf',
+    link: 'https://loopconf.com/',
+    organization: false,
+    startDate: 'February 21, 2018',
+    endDate: 'February 24, 2018',
+    location: {
+      city: 'Salt Lake City',
+      state: 'Utah',
+      country: 'USA',
+      continent: 'North America',
+    },
+    cfpDeadline: 'November 21, 2017',
+    travel: 'Yes',
+    coc: 'https://loopconf.com/code-of-conduct/',
+  },
+  {
     name: 'Assert(js)',
     link: 'https://devnexus.com/',
     organization: 'OK GROW!',
