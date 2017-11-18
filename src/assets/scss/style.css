@@ -18223,11 +18223,22 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.blue-gradient {
-  background: linear-gradient(135deg, #0064D5, #008FFF); }
+.bg-blue-dark {
+  background-color: #313943; }
 
 .bg-blue {
   background-color: #0064D5; }
 
-.bg-blue-light {
-  background-color: #F3F9FF; }
+.bg-off-white {
+  background-color: #F9FAFC; }
+
+.color-white {
+  color: #fff; }
+
+body {
+  font-family: "Source Sans Pro", sans-serif; }
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 92%; }

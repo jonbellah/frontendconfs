@@ -11,7 +11,9 @@ const App = () => {
   return (
     <div className="App">
       <Header />
-      {conferenceList}
+      <div className="container">
+        {conferenceList}
+      </div>
     </div>
   );
 };

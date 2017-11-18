@@ -1,11 +1,17 @@
-.blue-gradient {
-  background: linear-gradient(135deg, $blue, $blue-medium);
+// Backgrounds
+.bg-blue-dark {
+  background-color: $blue-dark;
 }
 
 .bg-blue {
   background-color: $blue;
 }
 
-.bg-blue-light {
-  background-color: $blue-light;
+.bg-off-white {
+  background-color: $off-white;
+}
+
+// Text Color
+.color-white {
+  color: #fff;
 }
