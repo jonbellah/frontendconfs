@@ -3,7 +3,7 @@ import React from 'react';
 import Header from './Header';
 import Conference from './Conference';
 
-import conferences from './data/conferences';
+import conferences from './assets/data/conferences';
 
 const App = () => {
   const conferenceList = conferences.map(item => <Conference key={item.index} {...item} />);
