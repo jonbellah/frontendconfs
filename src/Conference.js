@@ -1,14 +1,25 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { getDates } from './lib/utils';
+import { getDates, hasOpenCall } from './lib/utils';
 
 const Conference = props => (
   <div className="conference">
     <a href={props.link}>
       {props.name}
     </a>
-    {getDates(props.startDate, props.endDate)}
+    <span>
+      {getDates(props.startDate, props.endDate)}
+    </span>
+    <span>
+      {props.location.city}, {props.location.state} {props.location.country}
+    </span>
+    <span>
+      {hasOpenCall(props.cfpDeadline)}
+    </span>
+    <span>
+      {props.travel}
+    </span>
   </div>
 );
 

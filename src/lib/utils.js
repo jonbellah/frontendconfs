@@ -1,3 +1,6 @@
+/**
+ * Helper to display the dates that a conference will be happening.
+ */
 function getDates(startDate, endDate) {
   const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
   const start = new Date(startDate);
@@ -21,4 +24,22 @@ function getDates(startDate, endDate) {
   return false;
 }
 
-export { getDates };
+/**
+ * Helper to display whether a conference has an open call for speakers.
+ */
+function hasOpenCall(cfpDeadline) {
+  if (cfpDeadline === false) {
+    return;
+  }
+
+  const currentDate = new Date();
+  const deadline = new Date(cfpDeadline);
+
+  if (deadline > currentDate) {
+    return 'Open Call for Papers';
+  }
+
+  return 'Call for Papers Closed';
+}
+
+export { getDates, hasOpenCall };
