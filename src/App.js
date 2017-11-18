@@ -1,4 +1,6 @@
 import React from 'react';
+
+import Header from './Header';
 import Conference from './Conference';
 
 import conferences from './data/conferences';
@@ -8,6 +10,7 @@ const App = () => {
 
   return (
     <div className="App">
+      <Header />
       {conferenceList}
     </div>
   );
