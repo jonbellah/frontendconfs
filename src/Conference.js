@@ -4,25 +4,27 @@ import PropTypes from 'prop-types';
 import { getDates, hasOpenCall } from './lib/utils';
 
 const Conference = props => (
-  <div className="conference">
-    <a href={props.link}>
-      {props.name}
-    </a>
-    <span>
+  <div className="conference d:f flx-d:r">
+    <div className="w:3of12">
+      <a href={props.link}>
+        {props.name}
+      </a>
+    </div>
+    <div className="w:3of12">
       {getDates(props.startDate, props.endDate)}
-    </span>
-    <span>
+    </div>
+    <div className="w:2of12">
       {props.location.city}, {props.location.state} {props.location.country}
-    </span>
-    <span>
+    </div>
+    <div className="w:2of12">
       {hasOpenCall(props.cfpDeadline)}
-    </span>
-    <span>
+    </div>
+    <div className="w:2of12">
       {props.travel}
-    </span>
-    <span>
+    </div>
+    <div className="w:2of12">
       {props.coc}
-    </span>
+    </div>
   </div>
 );
 

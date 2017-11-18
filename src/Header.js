@@ -1,9 +1,9 @@
 import React from 'react';
 
 const Header = () => (
-  <header id="masthead" className="bg-blue-dark p:2">
+  <header id="masthead" className="bg-white bor-bot-blue-light p-t:4 p-b:4 m-b:4">
     <div className="container">
-      <h1 className="color-white">front-end conferences</h1>
+      <h1 className="t-t:u">front-end conferences</h1>
     </div>
   </header>
 );

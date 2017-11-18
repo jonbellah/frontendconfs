@@ -18229,11 +18229,20 @@ table {
 .bg-blue {
   background-color: #0064D5; }
 
+.bg-blue-light {
+  background-color: #F3F9FF; }
+
 .bg-off-white {
   background-color: #F9FAFC; }
 
+.bg-white {
+  background-color: #fff; }
+
 .color-white {
   color: #fff; }
+
+.bor-bot-blue-light {
+  border-bottom: 1px solid #daecff; }
 
 body {
   font-family: "Source Sans Pro", sans-serif; }

@@ -7,11 +7,24 @@
   background-color: $blue;
 }
 
+.bg-blue-light {
+  background-color: $blue-light;
+}
+
 .bg-off-white {
   background-color: $off-white;
+}
+
+.bg-white {
+  background-color: #fff;
 }
 
 // Text Color
 .color-white {
   color: #fff;
+}
+
+// Border
+.bor-bot-blue-light {
+  border-bottom: 1px solid darken($blue-light, 5%);
 }
