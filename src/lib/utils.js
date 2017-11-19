@@ -1,3 +1,7 @@
+import React from 'react';
+
+import Circle from '../Circle';
+
 /**
  * Helper to display the dates that a conference will be happening.
  */
@@ -29,17 +33,24 @@ function getDates(startDate, endDate) {
  */
 function hasOpenCall(cfpDeadline) {
   if (cfpDeadline === false) {
-    return;
+    return <Circle color="#eee" />;
   }
 
   const currentDate = new Date();
   const deadline = new Date(cfpDeadline);
 
   if (deadline > currentDate) {
-    return 'Open Call for Papers';
+    return <Circle color="green" />;
   }
 
-  return 'Call for Papers Closed';
+  return <Circle color="red" />;
 }
 
-export { getDates, hasOpenCall };
+/**
+ * Helper to display whether a conference covers travel for speakers.
+ */
+function coversTravel() {
+  return false;
+}
+
+export { getDates, hasOpenCall, coversTravel };

@@ -1,32 +1,58 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 import { getDates, hasOpenCall } from './lib/utils';
 
-const Conference = props => (
-  <div className="conference d:f flx-d:r">
-    <div className="w:3of12">
-      <a href={props.link}>
-        {props.name}
+class Conference extends Component {
+  static renderCoc(coc) {
+    if (coc === false) {
+      return <div />;
+    }
+
+    return (
+      <a href={coc}>
+        Link
       </a>
-    </div>
-    <div className="w:3of12">
-      {getDates(props.startDate, props.endDate)}
-    </div>
-    <div className="w:2of12">
-      {props.location.city}, {props.location.state} {props.location.country}
-    </div>
-    <div className="w:2of12">
-      {hasOpenCall(props.cfpDeadline)}
-    </div>
-    <div className="w:2of12">
-      {props.travel}
-    </div>
-    <div className="w:2of12">
-      {props.coc}
-    </div>
-  </div>
-);
+    );
+  }
+
+  render() {
+    const {
+      link,
+      name,
+      startDate,
+      endDate,
+      cfpDeadline,
+      travel,
+      coc,
+    } = this.props;
+
+    return (
+      <tr className="conference bor-bot-light-gray">
+        <td className="p-t:2 p-b:2">
+          <a href={link}>
+            {name}
+          </a>
+        </td>
+        <td>
+          {getDates(startDate, endDate)}
+        </td>
+        <td>
+          {this.props.location.city}, {this.props.location.state} {this.props.location.country}
+        </td>
+        <td>
+          {hasOpenCall(cfpDeadline)}
+        </td>
+        <td>
+          {travel}
+        </td>
+        <td>
+          {Conference.renderCoc(coc)}
+        </td>
+      </tr>
+    );
+  }
+}
 
 Conference.propTypes = {
   name: PropTypes.string.isRequired,

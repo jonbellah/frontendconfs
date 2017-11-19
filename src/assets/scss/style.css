@@ -18223,26 +18223,14 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.bg-blue-dark {
-  background-color: #313943; }
-
-.bg-blue {
-  background-color: #0064D5; }
-
-.bg-blue-light {
-  background-color: #F3F9FF; }
-
-.bg-off-white {
-  background-color: #F9FAFC; }
-
-.bg-white {
-  background-color: #fff; }
-
 .color-white {
   color: #fff; }
 
-.bor-bot-blue-light {
-  border-bottom: 1px solid #daecff; }
+.color-blue {
+  color: #0064D5; }
+
+.bor-bot-light-gray {
+  border-bottom: 1px solid #eee; }
 
 body {
   font-family: "Source Sans Pro", sans-serif; }

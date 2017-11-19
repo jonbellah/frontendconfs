@@ -11,9 +11,9 @@ const App = () => {
   return (
     <div className="App">
       <Header />
-      <div className="container d:f flx-d:c">
+      <table className="container">
         {conferenceList}
-      </div>
+      </table>
     </div>
   );
 };

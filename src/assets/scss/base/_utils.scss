@@ -1,30 +1,13 @@
-// Backgrounds
-.bg-blue-dark {
-  background-color: $blue-dark;
-}
-
-.bg-blue {
-  background-color: $blue;
-}
-
-.bg-blue-light {
-  background-color: $blue-light;
-}
-
-.bg-off-white {
-  background-color: $off-white;
-}
-
-.bg-white {
-  background-color: #fff;
-}
-
 // Text Color
 .color-white {
   color: #fff;
 }
 
+.color-blue {
+  color: $blue;
+}
+
 // Border
-.bor-bot-blue-light {
-  border-bottom: 1px solid darken($blue-light, 5%);
+.bor-bot-light-gray {
+  border-bottom: 1px solid #eee;
 }
