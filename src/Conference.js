@@ -41,6 +41,9 @@ class Conference extends Component {
           {this.props.location.city}, {this.props.location.state} {this.props.location.country}
         </td>
         <td>
+          {this.props.location.continent}
+        </td>
+        <td>
           {hasOpenCall(cfpDeadline)}
         </td>
         <td>
