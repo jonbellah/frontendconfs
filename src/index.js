@@ -1,14 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import createHistory from 'history/createBrowserHistory';
 
+import 'react-table/react-table.css';
 import './assets/scss/style.css';
 
 import App from './App';
 import serviceWorker from './sw';
 
-const history = createHistory();
-
-ReactDOM.render(<App history={history} />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
 
 serviceWorker();

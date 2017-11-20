@@ -21,13 +21,9 @@ function filterOpenCalls(confs) {
 }
 
 /**
- * Filter data by selected options
+ * Filter continents
  */
-function filterBy(confs, val) {
-  if (val === 'cfpDeadline') {
-    return filterOpenCalls(confs);
-  }
-
+function filterContinents(confs, val) {
   const filtered = [];
 
   confs.forEach(function(conf) {
@@ -37,6 +33,20 @@ function filterBy(confs, val) {
   });
 
   return filtered;
+}
+/**
+ * Filter data by selected options
+ */
+function filterBy(confs, filter, val = false) {
+  if (filter === 'cfpDeadline') {
+    return filterOpenCalls(confs);
+  }
+
+  if (filter === 'continent') {
+    return filterContinents(confs, val);
+  }
+
+  return false;
 }
 
 export default filterBy;
