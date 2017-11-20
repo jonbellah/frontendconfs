@@ -18,11 +18,16 @@ class App extends Component {
     };
 
     this.doFilter = this.doFilter.bind(this);
+    this.resetFilters = this.resetFilters.bind(this);
+    this.renderResetFilters = this.renderResetFilters.bind(this);
+    this.updateHistory = this.updateHistory.bind(this);
+    this.clearHistory = this.clearHistory.bind(this);
   }
 
   doFilter(event) {
     const { confs } = this.state;
-    const filtered = filterBy(confs, event.target.dataset.filter);
+    const { filter } = event.target.dataset;
+    const filtered = filterBy(confs, filter);
 
     this.setState({
       filtered: true,
@@ -30,20 +35,38 @@ class App extends Component {
     });
   }
 
+  resetFilters() {
+    this.setState({
+      filtered: false,
+      confs: conferences,
+    });
+  }
+
+  renderResetFilters() {
+    const { filtered } = this.state;
+
+    if (filtered) {
+      return <button onClick={this.resetFilters}>Reset Filters</button>;
+    }
+
+    return <div />;
+  }
+
   render() {
-    const { confs, filtered } = this.state;
+    const { confs } = this.state;
     const conferenceList = confs.map(item => <Conference key={item.index} {...item} />);
 
     return (
       <div className="App">
         <Header />
-        {filtered}
+
         <div className="container d:f flx-d:r">
           <table className="w:9of12">
             {conferenceList}
           </table>
 
           <Filters childDoFilter={this.doFilter} />
+          {this.renderResetFilters()}
         </div>
 
         <Footer />
