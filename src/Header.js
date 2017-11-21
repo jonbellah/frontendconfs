@@ -1,8 +1,8 @@
 import React from 'react';
 
 const Header = () => (
-  <header id="masthead" className="bor-bot-light-gray p:3 m-b:4">
-    <h1 className="color-blue f-w:700">Front-End Conferences</h1>
+  <header id="masthead" className="bg-dark-blue p:5 m-b:8">
+    <h1 className="color-blue-gray f-w:400 f:2">Front-End Conferences</h1>
   </header>
 );
 

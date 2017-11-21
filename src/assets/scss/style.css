@@ -18223,11 +18223,17 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.bg-dark-blue {
+  background-color: #394B63; }
+
 .color-white {
   color: #fff; }
 
 .color-blue {
   color: #0064D5; }
+
+.color-blue-gray {
+  color: #C3CEDC; }
 
 .bor-bot-light-gray {
   border-bottom: 1px solid #eee; }
@@ -18240,5 +18246,9 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 1280px;
+  max-width: 1320px;
   width: 92%; }
+
+.ReactTable .rt-th,
+.ReactTable .rt-td {
+  padding: 15px; }

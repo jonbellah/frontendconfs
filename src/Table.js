@@ -26,16 +26,19 @@ const Table = () => {
     accessor: 'cfpDeadline',
     Cell: props => hasOpenCall(props.value),
     width: 100,
+    className: 't-a:c',
   }, {
     Header: 'Travel Covered',
     accessor: 'travel',
     sortable: false,
+    className: 't-a:c',
   }, {
     Header: 'Code of Conduct',
     accessor: 'coc',
     Cell: props => cocLink(props.value),
     sortable: false,
     width: 125,
+    className: 't-a:c',
   }];
 
   return (
