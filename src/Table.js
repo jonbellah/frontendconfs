@@ -2,7 +2,7 @@ import React from 'react';
 import ReactTable from 'react-table';
 
 import conferences from './assets/data/conferences';
-import { getDates, hasOpenCall } from './lib/utils';
+import { getDates, hasOpenCall, cocLink } from './lib/utils';
 
 const Table = () => {
   const pageSize = conferences.length;
@@ -14,22 +14,28 @@ const Table = () => {
     accessor: 'startDate',
     Cell: props => getDates(props.original.startDate, props.original.endDate),
   }, {
-    id: 'location', // Required because our accessor is not a string
     Header: 'Location',
-    accessor: d => `${d.location.city}, ${d.location.state} ${d.location.country}`,
-  },
-  {
+    id: 'location',
+    accessor: d => `${d.location.city}, ${d.location.state ? d.location.state : ''} ${d.location.country}`,
+  }, {
+    Header: 'Continent',
+    id: 'continent',
+    accessor: d => `${d.location.continent}`,
+  }, {
     Header: 'CFP Open',
     accessor: 'cfpDeadline',
     Cell: props => hasOpenCall(props.value),
-  },
-  {
+    width: 100,
+  }, {
     Header: 'Travel Covered',
     accessor: 'travel',
-  },
-  {
+    sortable: false,
+  }, {
     Header: 'Code of Conduct',
     accessor: 'coc',
+    Cell: props => cocLink(props.value),
+    sortable: false,
+    width: 125,
   }];
 
   return (

@@ -47,5 +47,15 @@ function hasOpenCall(cfpDeadline) {
   return <Circle color="red" />;
 }
 
+/**
+ * Helper to display a CoC link.
+ */
+function cocLink(link) {
+  if (link) {
+    return <a href={link}>View</a>;
+  }
 
-export { getDates, hasOpenCall };
+  return '';
+}
+
+export { getDates, hasOpenCall, cocLink };
