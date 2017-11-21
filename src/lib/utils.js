@@ -12,7 +12,7 @@ function getDates(startDate, endDate) {
 
   // Only one day
   if (start.getDate() === end.getDate()) {
-    return startDate;
+    return `${monthNames[start.getMonth()]} ${start.getDate()} ${start.getFullYear()}`;
   }
 
   // If all conference days fall within the same month
