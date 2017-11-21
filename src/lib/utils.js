@@ -1,4 +1,5 @@
 import React from 'react';
+import moment from 'moment';
 
 import Circle from '../Circle';
 
@@ -12,7 +13,7 @@ function getDates(startDate, endDate) {
 
   // Only one day
   if (start.getDate() === end.getDate()) {
-    return `${monthNames[start.getMonth()]} ${start.getDate()} ${start.getFullYear()}`;
+    return moment(start).format('MMMM D, YYYY');
   }
 
   // If all conference days fall within the same month
@@ -46,11 +47,5 @@ function hasOpenCall(cfpDeadline) {
   return <Circle color="red" />;
 }
 
-/**
- * Helper to display whether a conference covers travel for speakers.
- */
-function coversTravel() {
-  return false;
-}
 
-export { getDates, hasOpenCall, coversTravel };
+export { getDates, hasOpenCall };

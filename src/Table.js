@@ -2,9 +2,9 @@ import React from 'react';
 import ReactTable from 'react-table';
 
 import conferences from './assets/data/conferences';
-import { getDates } from './lib/utils';
+import { getDates, hasOpenCall } from './lib/utils';
 
-const ConfTable = () => {
+const Table = () => {
   const pageSize = conferences.length;
   const columns = [{
     Header: 'Name',
@@ -17,6 +17,19 @@ const ConfTable = () => {
     id: 'location', // Required because our accessor is not a string
     Header: 'Location',
     accessor: d => `${d.location.city}, ${d.location.state} ${d.location.country}`,
+  },
+  {
+    Header: 'CFP Open',
+    accessor: 'cfpDeadline',
+    Cell: props => hasOpenCall(props.value),
+  },
+  {
+    Header: 'Travel Covered',
+    accessor: 'travel',
+  },
+  {
+    Header: 'Code of Conduct',
+    accessor: 'coc',
   }];
 
   return (
@@ -25,8 +38,9 @@ const ConfTable = () => {
       columns={columns}
       showPagination={false}
       defaultPageSize={pageSize}
+      resizable={false}
     />
   );
 };
 
-export default ConfTable;
+export default Table;
