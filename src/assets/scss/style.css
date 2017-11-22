@@ -18241,6 +18241,9 @@ table {
 .bor-bot-light-gray {
   border-bottom: 1px solid #eee; }
 
+.round {
+  border-radius: 50%; }
+
 * {
   box-sizing: border-box; }
 
