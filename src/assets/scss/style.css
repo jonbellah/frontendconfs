@@ -18223,9 +18223,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.bg-dark-blue {
-  background-color: #394B63; }
-
 .bg-off-white {
   background-color: #F9FAFC; }
 
@@ -18234,12 +18231,6 @@ table {
 
 .color-dark-blue {
   color: #394B63; }
-
-.color-blue-gray {
-  color: #C3CEDC; }
-
-.bor-bot-light-gray {
-  border-bottom: 1px solid #eee; }
 
 .round {
   border-radius: 50%; }

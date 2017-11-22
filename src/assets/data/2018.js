@@ -691,6 +691,22 @@ const confs2018 = [
     coc: false,
   },
   {
+    name: 'CSSConf EU',
+    link: 'https://2018.cssconf.eu/',
+    organization: false,
+    startDate: new Date('June 1, 2018').getTime(),
+    endDate: new Date('June 1, 2018').getTime(),
+    location: {
+      city: 'Berlin',
+      state: false,
+      country: 'Germany',
+      continent: 'Europe',
+    },
+    cfpDeadline: new Date('January 1, 2018').getTime(),
+    travel: 'Yes',
+    coc: 'https://2018.jsconf.eu/code-of-conduct/',
+  },
+  {
     name: 'JSConf EU',
     link: 'https://2018.jsconf.eu/',
     organization: false,
@@ -702,8 +718,8 @@ const confs2018 = [
       country: 'Germany',
       continent: 'Europe',
     },
-    cfpDeadline: false,
-    travel: false,
+    cfpDeadline: new Date('January 1, 2018').getTime(),
+    travel: 'Yes',
     coc: 'https://2017.jsconf.eu/code-of-conduct/',
   },
   {
