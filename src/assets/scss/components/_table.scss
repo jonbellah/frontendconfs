@@ -1,4 +1,38 @@
+.ReactTable {
+  border: 0;
+}
+
+.ReactTable .rt-th,
+.ReactTable .rt-td,
+.ReactTable .rt-thead .rt-th,
+.ReactTable .rt-thead .rt-td {
+  padding: 20px 15px;
+}
+
+.ReactTable .rt-thead .rt-th,
+.ReactTable .rt-thead .rt-td {
+  color: $dark-blue;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.ReactTable .rt-tbody .rt-td,
+.ReactTable .rt-thead .rt-th,
+.ReactTable .rt-thead .rt-td {
+  border-right: 0;
+}
+
+.ReactTable .rt-tbody .rt-tr-group{
+  border-bottom: 5px solid $off-white;
+}
+
 .ReactTable .rt-th,
 .ReactTable .rt-td {
-  padding: 15px;
+  white-space: normal;
+  display: flex;
+  align-items: center;
+}
+
+.rt-tbody {
+  background-color: #fff;
 }

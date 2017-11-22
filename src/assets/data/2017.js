@@ -23,7 +23,7 @@ const confs2017 = [
     endDate: new Date('November 30, 2017').getTime(),
     location: {
       city: 'San Francisco',
-      state: 'California',
+      state: 'CA',
       country: 'USA',
       continent: 'North America',
     },
@@ -71,7 +71,7 @@ const confs2017 = [
     endDate: new Date('December 3, 2017').getTime(),
     location: {
       city: 'Nashville',
-      state: 'Tennessee',
+      state: 'TN',
       country: 'USA',
       continent: 'North America',
     },
@@ -87,7 +87,7 @@ const confs2017 = [
     endDate: new Date('December 8, 2017').getTime(),
     location: {
       city: 'Clearwater',
-      state: 'Florida',
+      state: 'FL',
       country: 'USA',
       continent: 'North America',
     },
@@ -119,9 +119,9 @@ const confs2017 = [
     endDate: new Date('December 13, 2017').getTime(),
     location: {
       city: 'Denver',
-      state: 'Colorado',
+      state: 'CO',
       country: 'USA',
-      continent: 'Europe',
+      continent: 'North America',
     },
     cfpDeadline: false,
     travel: false,

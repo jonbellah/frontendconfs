@@ -18226,11 +18226,14 @@ table {
 .bg-dark-blue {
   background-color: #394B63; }
 
+.bg-off-white {
+  background-color: #F9FAFC; }
+
 .color-white {
   color: #fff; }
 
-.color-blue {
-  color: #0064D5; }
+.color-dark-blue {
+  color: #394B63; }
 
 .color-blue-gray {
   color: #C3CEDC; }
@@ -18242,13 +18245,61 @@ table {
   box-sizing: border-box; }
 
 body {
-  font-family: "Source Sans Pro", sans-serif; }
+  font-family: "Source Sans Pro", sans-serif;
+  color: #394B63;
+  line-height: 1.4; }
+
+a {
+  color: #1976D2;
+  position: relative;
+  text-decoration: none; }
+  a:before, a:after {
+    content: '';
+    position: absolute;
+    transition: transform .25s ease; }
+  a:before {
+    background: #1976D2;
+    bottom: 0;
+    height: 2px;
+    left: 0;
+    transform: scaleX(0);
+    width: 100%; }
+  a:hover:before {
+    transform: scaleX(1); }
 
 .container {
   margin: 0 auto;
   max-width: 1320px;
   width: 92%; }
 
+.ReactTable {
+  border: 0; }
+
+.ReactTable .rt-th,
+.ReactTable .rt-td,
+.ReactTable .rt-thead .rt-th,
+.ReactTable .rt-thead .rt-td {
+  padding: 20px 15px; }
+
+.ReactTable .rt-thead .rt-th,
+.ReactTable .rt-thead .rt-td {
+  color: #394B63;
+  font-size: 14px;
+  font-weight: 700; }
+
+.ReactTable .rt-tbody .rt-td,
+.ReactTable .rt-thead .rt-th,
+.ReactTable .rt-thead .rt-td {
+  border-right: 0; }
+
+.ReactTable .rt-tbody .rt-tr-group {
+  border-bottom: 5px solid #F9FAFC; }
+
 .ReactTable .rt-th,
 .ReactTable .rt-td {
-  padding: 15px; }
+  white-space: normal;
+  display: flex;
+  align-items: center; }
+
+.rt-tbody {
+  background-color: #fff; }

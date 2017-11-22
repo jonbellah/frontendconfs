@@ -103,7 +103,7 @@ const confs2018 = [
     endDate: new Date('February 2, 2018').getTime(),
     location: {
       city: 'Atlanta',
-      state: 'Georgia',
+      state: 'GA',
       country: 'USA',
       continent: 'North America',
     },
@@ -138,7 +138,7 @@ const confs2018 = [
     endDate: new Date('February 10, 2018').getTime(),
     location: {
       city: 'Denver',
-      state: 'Colorado',
+      state: 'CO',
       country: 'USA',
       continent: 'North America',
     },
@@ -147,7 +147,7 @@ const confs2018 = [
     coc: false,
   },
   {
-    name: 'The Rolling Scopes Conference',
+    name: 'Rolling Scopes Conf',
     link: 'https://2018.conf.rollingscopes.com/',
     organization: 'The Rolling Scopes',
     startDate: new Date('February 10, 2018').getTime(),
@@ -170,7 +170,7 @@ const confs2018 = [
     endDate: new Date('February 16, 2018').getTime(),
     location: {
       city: 'San Francisco',
-      state: 'California',
+      state: 'CA',
       country: 'USA',
       continent: 'North America',
     },
@@ -346,7 +346,7 @@ const confs2018 = [
     endDate: new Date('March 14, 2018').getTime(),
     location: {
       city: 'Portland',
-      state: 'Oregon',
+      state: 'OR',
       country: 'USA',
       continent: 'North America',
     },
@@ -394,7 +394,7 @@ const confs2018 = [
     endDate: new Date('March 23, 2018').getTime(),
     location: {
       city: 'New Orleans',
-      state: 'Louisiana',
+      state: 'LA',
       country: 'USA',
       continent: 'North America',
     },
@@ -410,7 +410,7 @@ const confs2018 = [
     endDate: new Date('March 28, 2018').getTime(),
     location: {
       city: 'New Orleans',
-      state: 'Louisiana',
+      state: 'LA',
       country: 'USA',
       continent: 'North America',
     },
@@ -458,7 +458,7 @@ const confs2018 = [
     endDate: new Date('April 6, 2018').getTime(),
     location: {
       city: 'Champaign',
-      state: 'Illinois',
+      state: 'IL',
       country: 'USA',
       continent: 'North America',
     },
@@ -538,7 +538,7 @@ const confs2018 = [
     endDate: new Date('April 20, 2018').getTime(),
     location: {
       city: 'Salt Lake City',
-      state: 'Utah',
+      state: 'UT',
       country: 'USA',
       continent: 'North America',
     },
@@ -586,7 +586,7 @@ const confs2018 = [
     endDate: new Date('May 10, 2018').getTime(),
     location: {
       city: 'St. Paul',
-      state: 'Minnesota',
+      state: 'MN',
       country: 'USA',
       continent: 'North America',
     },
@@ -652,7 +652,7 @@ const confs2018 = [
       city: 'Warsaw',
       state: false,
       country: 'Poland',
-      continent: 'Euroe',
+      continent: 'Europe',
     },
     cfpDeadline: new Date('March 31, 2018').getTime(),
     travel: 'Yes',
@@ -714,8 +714,8 @@ const confs2018 = [
     endDate: new Date('June 8, 2018').getTime(),
     location: {
       city: 'Charleston',
-      state: false,
-      country: 'South Carolina',
+      state: 'SC',
+      country: 'USA',
       continent: 'North America',
     },
     cfpDeadline: new Date('December 31, 2018').getTime(),
@@ -746,7 +746,7 @@ const confs2018 = [
     endDate: new Date('June 14, 2018').getTime(),
     location: {
       city: 'San Jose',
-      state: 'California',
+      state: 'CA',
       country: 'USA',
       continent: 'North America',
     },

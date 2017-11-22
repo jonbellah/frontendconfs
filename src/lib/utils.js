@@ -58,4 +58,11 @@ function cocLink(link) {
   return '';
 }
 
-export { getDates, hasOpenCall, cocLink };
+/**
+ * Helper to display conference link.
+ */
+function confLink(link, conf) {
+  return <a href={link}>{conf}</a>;
+}
+
+export { getDates, hasOpenCall, cocLink, confLink };

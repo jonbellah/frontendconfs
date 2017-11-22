@@ -2,13 +2,15 @@ import React from 'react';
 import ReactTable from 'react-table';
 
 import conferences from './assets/data/conferences';
-import { getDates, hasOpenCall, cocLink } from './lib/utils';
+import { getDates, hasOpenCall, cocLink, confLink } from './lib/utils';
 
 const Table = () => {
   const pageSize = conferences.length;
   const columns = [{
     Header: 'Name',
     accessor: 'name',
+    Cell: props => confLink(props.original.link, props.value),
+    className: 'f-w:700',
   }, {
     Header: 'Date',
     accessor: 'startDate',
@@ -21,24 +23,28 @@ const Table = () => {
     Header: 'Continent',
     id: 'continent',
     accessor: d => `${d.location.continent}`,
+    width: 150,
   }, {
     Header: 'CFP Open',
     accessor: 'cfpDeadline',
     Cell: props => hasOpenCall(props.value),
     width: 100,
-    className: 't-a:c',
+    className: 't-a:c j-c:c',
+    headerClassName: 'j-c:c',
   }, {
     Header: 'Travel Covered',
     accessor: 'travel',
     sortable: false,
-    className: 't-a:c',
+    className: 't-a:c j-c:c',
+    headerClassName: 'j-c:c',
   }, {
     Header: 'Code of Conduct',
     accessor: 'coc',
     Cell: props => cocLink(props.value),
     sortable: false,
-    width: 125,
-    className: 't-a:c',
+    width: 150,
+    className: 't-a:c j-c:c',
+    headerClassName: 'j-c:c',
   }];
 
   return (
