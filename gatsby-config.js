@@ -10,6 +10,12 @@ module.exports = {
       options: {
         fonts: [`source sans pro`]
       }
-    }
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-10941714-11',
+      },
+    },
   ],
 }
