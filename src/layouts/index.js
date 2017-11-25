@@ -8,6 +8,7 @@ import '../assets/scss/style.scss'
 
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Email from '../components/Email';
 
 const TemplateWrapper = ({ children }) => (
   <div>
@@ -20,6 +21,7 @@ const TemplateWrapper = ({ children }) => (
     />
     <Header />
     {children()}
+    <Email />
     <Footer />
   </div>
 )

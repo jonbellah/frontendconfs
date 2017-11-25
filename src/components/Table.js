@@ -28,7 +28,7 @@ const Table = () => {
     Header: 'CFP Open',
     accessor: 'cfpDeadline',
     Cell: props => hasOpenCall(props.value),
-    width: 100,
+    width: 110,
     className: 't-a:c j-c:c',
     headerClassName: 'j-c:c',
   }, {
@@ -49,7 +49,7 @@ const Table = () => {
 
   return (
     <ReactTable
-      className="m-b:3"
+      className="m-b:8"
       data={conferences}
       columns={columns}
       showPagination={false}

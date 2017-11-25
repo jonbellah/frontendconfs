@@ -36,3 +36,27 @@
 .rt-tbody {
   background-color: #fff;
 }
+
+.ReactTable .rt-thead .rt-th,
+.ReactTable .rt-thead .rt-td {
+  border: 0;
+  box-shadow: none !important;
+}
+
+.ReactTable .rt-thead .rt-th.-sort-desc:after,
+.ReactTable .rt-thead .rt-th.-sort-asc:after {
+  content: '';
+	width: 0; 
+  height: 0; 
+  margin-left: 5px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+}
+
+.ReactTable .rt-thead .rt-th.-sort-desc:after {
+  border-bottom: 5px solid $dark-blue;
+}
+
+.ReactTable .rt-thead .rt-th.-sort-asc:after {
+  border-top: 5px solid $dark-blue;
+}

@@ -1,11 +1,27 @@
 // Background
+.bg-white {
+  background-color: #fff;
+}
+
 .bg-off-white {
   background-color: $off-white;
+}
+
+.bg-blue-gradient {
+  background: linear-gradient(45deg, $blue-700, $blue-500);
 }
 
 // Text Color
 .color-white {
   color: #fff;
+}
+
+.color-white-75 {
+  color: rgba(255,255,255,0.75);
+}
+
+.color-white-50 {
+  color: rgba(255,255,255,0.5);
 }
 
 .color-dark-blue {
@@ -15,4 +31,23 @@
 // Border Radius
 .round {
   border-radius: 50%;
+}
+
+// Border Bottom
+.b-b\:off-white {
+  border-bottom: 1px solid #f1f1f1;
+}
+
+// Screen reader text
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
 }

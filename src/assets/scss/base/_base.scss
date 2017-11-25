@@ -11,7 +11,7 @@ body {
 
 
 a {
-  color: $blue;
+  color: $blue-700;
   position: relative;
   text-decoration: none;
 
@@ -23,7 +23,7 @@ a {
   }
 
   &:before {
-    background: $blue;
+    background: $blue-700;
     bottom: 0;
     height: 2px;
     left: 0;
@@ -34,8 +34,11 @@ a {
   &:hover:before {
     transform: scaleX(1);
   }
-}
 
+  &.color-dark-blue:before {
+    background: $dark-blue;
+  }
+}
 
 .container {
   margin: 0 auto;
