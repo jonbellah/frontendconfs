@@ -234,7 +234,7 @@ const confs2018 = [
     endDate: new Date('February 23, 2018').getTime(),
     location: {
       city: 'Atlanta',
-      state: 'Georgia',
+      state: 'GA',
       country: 'USA',
       continent: 'North America',
     },
@@ -250,7 +250,7 @@ const confs2018 = [
     endDate: new Date('February 24, 2018').getTime(),
     location: {
       city: 'Salt Lake City',
-      state: 'Utah',
+      state: 'UT',
       country: 'USA',
       continent: 'North America',
     },
@@ -266,7 +266,7 @@ const confs2018 = [
     endDate: new Date('February 22, 2018').getTime(),
     location: {
       city: 'San Antonio',
-      state: 'Texas',
+      state: 'TX',
       country: 'USA',
       continent: 'North America',
     },
@@ -426,7 +426,7 @@ const confs2018 = [
     endDate: new Date('March 28, 2018').getTime(),
     location: {
       city: 'Redwood City',
-      state: 'California',
+      state: 'CA',
       country: 'USA',
       continent: 'North America',
     },
@@ -778,7 +778,7 @@ const confs2018 = [
     endDate: new Date('July 13, 2018').getTime(),
     location: {
       city: 'Portland',
-      state: 'Oregon',
+      state: 'OR',
       country: 'USA',
       continent: 'North America',
     },
