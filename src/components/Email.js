@@ -21,7 +21,7 @@ class Email extends Component {
         <form action="https://jonbellah.us4.list-manage.com/subscribe/post?u=cd903cc3fde462d23ad126e77&amp;id=bbc672add9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
           <div className="container">
             <div className="w:12of12 t-a:c">
-              <h2 className="color-white f:5 f-w:700">Subscribe to our mailing list</h2>
+              <h2 className="color-white f:5 f-w:700">Stay in the loop</h2>
               <p className="color-white-75 m-b:4">Get updates about new conferences, open speaker calls, and early bird sales, right in your inbox. No spam. Ever.</p>
             </div>
             <div className="mc-field-group d:f j-c:c a-i:f-s pos:r">
