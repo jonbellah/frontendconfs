@@ -17,7 +17,7 @@ class Email extends Component {
 
   render() {
     return (
-      <div id="mc_embed_signup" className="bg-blue-gradient p:8">
+      <div id="mc_embed_signup" className="bg-dark-gray p:8">
         <form action="https://jonbellah.us4.list-manage.com/subscribe/post?u=cd903cc3fde462d23ad126e77&amp;id=bbc672add9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
           <div className="container">
             <div className="w:12of12 t-a:c">

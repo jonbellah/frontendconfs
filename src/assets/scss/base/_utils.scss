@@ -7,8 +7,12 @@
   background-color: $off-white;
 }
 
-.bg-blue-gradient {
-  background: linear-gradient(45deg, $blue-700, $blue-500);
+.bg-dark-gray {
+  background-color: $dark-gray;
+}
+
+.bg-darker-gray {
+  background-color: $darker-gray;
 }
 
 // Text Color
@@ -22,6 +26,10 @@
 
 .color-white-50 {
   color: rgba(255,255,255,0.5);
+}
+
+.color-mid-gray {
+  color: $mid-gray;
 }
 
 .color-dark-blue {

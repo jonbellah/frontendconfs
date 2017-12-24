@@ -803,6 +803,22 @@ const confs2018 = [
     coc: 'https://skillsmatter.com/go/code-of-conduct',
   },
   {
+    name: 'React Rally',
+    link: 'http://www.reactrally.com/',
+    organization: false,
+    startDate: new Date('August 16, 2018').getTime(),
+    endDate: new Date('August 17 2018').getTime(),
+    location: {
+      city: 'Salt Lake City',
+      state: 'UT',
+      country: 'USA',
+      continent: 'North America',
+    },
+    cfpDeadline: false,
+    travel: false,
+    coc: 'http://www.reactrally.com/conduct',
+  },
+  {
     name: 'NDC Sydney',
     link: 'https://ndcsydney.com/',
     organization: false,

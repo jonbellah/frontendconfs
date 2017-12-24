@@ -49,7 +49,7 @@ const Table = () => {
 
   return (
     <ReactTable
-      className="m-b:8"
+      className="m-b:10"
       data={conferences}
       columns={columns}
       showPagination={false}

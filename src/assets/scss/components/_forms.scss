@@ -29,3 +29,22 @@
     background: darken($blue-800, 8%);
   }
 }
+
+.btn--primary {
+  background-color: $green-500;
+  padding: 6px 12px;
+  color: #fff;
+  border: 0;
+  border-radius: 4px;
+  transition: background-color 0.2s linear;
+
+  &:hover,
+  &:active {
+    background-color: darken($green-500, 5%);
+  }
+
+  &:before,
+  &:after {
+    background: transparent;
+  }
+}
