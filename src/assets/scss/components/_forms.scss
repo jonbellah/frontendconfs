@@ -1,8 +1,8 @@
 .input__field {
-  background: #fff;
-  border-bottom-left-radius: 8px;
-  border-top-left-radius: 8px;
+  background: lighten($dark-gray, 12%);
+  border-radius: 6px;
   border: 0;
+  color: #fff;
   font-size: 1rem;
   line-height: 1;
   outline: none;
@@ -11,10 +11,7 @@
 .btn--submit {
   -webkit-appearance: none;
   background: $blue-800;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 8px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 8px;
+  border-radius: 6px;
   border: 0;
   cursor: pointer;
   font-size: 1rem;
@@ -31,20 +28,31 @@
 }
 
 .btn--primary {
-  background-color: $green-500;
-  padding: 6px 12px;
-  color: #fff;
   border: 0;
-  border-radius: 4px;
-  transition: background-color 0.2s linear;
+  color: $blue-500;
+  font-weight: bold;
+  transition: color 0.2s linear;
 
   &:hover,
   &:active {
-    background-color: darken($green-500, 5%);
+    color: $blue-700;
   }
 
   &:before,
   &:after {
     background: transparent;
   }
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: rgba(255,255,255,0.5);
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: rgba(255,255,255,0.5);
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: rgba(255,255,255,0.5);
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: rgba(255,255,255,0.5);
 }

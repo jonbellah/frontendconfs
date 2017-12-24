@@ -25,7 +25,7 @@ class Email extends Component {
               <p className="color-white-75 d:i-b f:2 m-b:4 w:6of12">Get updates about new and upcoming conferences, open speaker calls, and early bird sales. Right in your inbox. No spam. Ever.</p>
             </div>
             <div className="mc-field-group d:f j-c:c a-i:f-s pos:r m-b:1">
-              <span className="input__wrap w:3of12 pos:r">
+              <span className="input__wrap w:3of12 pos:r m-r:.5">
                 <input type="email" value={this.state.email} onChange={this.handleInput} name="EMAIL" className="email input__field w:full p:1" placeholder="Email Address&hellip;" id="mce-EMAIL" />
                 <label className="screen-reader-text" htmlFor="mce-EMAIL">Email Address</label>
               </span>
