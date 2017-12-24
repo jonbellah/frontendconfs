@@ -563,6 +563,22 @@ const confs2018 = [
     coc: 'https://jsheroes.io/code-of-conduct',
   },
   {
+    name: 'Uphill Conference',
+    link: 'https://uphillconf.com/',
+    organization: false,
+    startDate: new Date('April 26, 2018').getTime(),
+    endDate: new Date('April 27, 2018').getTime(),
+    location: {
+      city: 'Bern',
+      state: false,
+      country: 'Switzerland',
+      continent: 'Europe',
+    },
+    cfpDeadline: false,
+    travel: false,
+    coc: 'http://uphillconf.com/code-of-conduct/',
+  },
+  {
     name: 'beyond tellerrand',
     link: 'https://beyondtellerrand.com/',
     organization: false,

@@ -60,3 +60,81 @@
 .ReactTable .rt-thead .rt-th.-sort-asc:after {
   border-top: 5px solid $dark-blue;
 }
+
+.ReactTable .rt-thead,
+.ReactTable .rt-tbody {
+  min-width: 0 !important;
+  max-width: 100%;
+}
+
+.ReactTable .rt-td {
+  @media #{$screen-lg-down} {
+    justify-content: flex-start;
+    max-width: 100% !important;
+    padding: 8px 12px 8px 160px;
+    position: relative;
+    width: 100% !important;
+    min-height: 35px;
+
+    &:before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 130px;
+      text-align: right;
+      padding: 8px 12px;
+    }
+
+    &:nth-child(5) {
+      padding-top: 14px;
+    }
+
+    &:nth-child(1):before {
+      content: "Conference";
+    }
+
+    &:nth-child(2):before {
+      content: "Date(s)";
+    }
+
+    &:nth-child(3):before {
+      content: "Location";
+    }
+
+    &:nth-child(4):before {
+      content: "Continent";
+    }
+
+    &:nth-child(5):before {
+      content: "CFP Open";
+    }
+
+    &:nth-child(6):before {
+      content: "Travel";
+    }
+
+    &:nth-child(7):before {
+      content: "Code of Conduct";
+    }
+
+
+  }
+}
+
+.ReactTable .rt-tr {
+  flex-direction: column;
+  padding: 10px 0;
+
+  @media #{$screen-lg} {
+    flex-direction: row;
+    padding: 0;
+  }
+}
+
+.ReactTable .rt-thead.-header {
+  display: none;
+
+  @media #{$screen-lg} {
+    display: flex;
+  }
+}
