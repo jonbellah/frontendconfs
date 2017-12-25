@@ -1,0 +1,41 @@
+.email__container {
+  padding: 1.5rem;
+
+  @media #{$screen-md} {
+    padding: 57.33px;
+    padding: 3.58318rem;
+  }
+}
+
+.email__title {
+  font-size: 23.04px;
+  font-size: 1.44rem;
+
+  @media #{$screen-md} {
+    font-size: 33.177px;
+    font-size: 2.0736rem;
+  }
+}
+
+.email__desc {
+  font-size: 16px;
+  font-size: 1rem;
+  width: 100%;
+
+  @media #{$screen-md} {
+    font-size: 19.2px;
+    font-size: 1.2rem;
+  }
+
+  @media #{$screen-lg} {
+    width: 60%;
+  }
+}
+
+.mc-field-group {
+  flex-direction: column;
+
+  @media #{$screen-md} {
+    flex-direction: row;
+  }
+}

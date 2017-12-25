@@ -71,18 +71,19 @@
   @media #{$screen-lg-down} {
     justify-content: flex-start;
     max-width: 100% !important;
+    min-height: 35px;
     padding: 8px 12px 8px 160px;
     position: relative;
     width: 100% !important;
-    min-height: 35px;
 
     &:before {
-      position: absolute;
+      font-weight: bold;
       left: 0;
+      padding: 8px 12px;
+      position: absolute;
+      text-align: right;
       top: 0;
       width: 130px;
-      text-align: right;
-      padding: 8px 12px;
     }
 
     &:nth-child(5) {

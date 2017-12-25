@@ -1,3 +1,13 @@
+.input__wrap {
+  margin-bottom: 0.5rem;
+  width: 100%;
+
+  @media #{$screen-md} {
+    margin-bottom: 0;
+    width: 40%;
+  }
+}
+
 .input__field {
   background: lighten($dark-gray, 12%);
   border-radius: 6px;
@@ -20,10 +30,15 @@
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   transition: background 0.25s linear;
+  width: 100%;
 
   &:hover,
   &:focus {
     background: darken($blue-800, 8%);
+  }
+
+  @media #{$screen-md} {
+    width: auto;
   }
 }
 
