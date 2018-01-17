@@ -309,7 +309,7 @@ const confs2018 = [
   {
     name: 'Activate Conference',
     link: 'https://activateconf.com/',
-    organization: true,
+    organization: false,
     startDate: new Date('February 22, 2018').getTime(),
     endDate: new Date('February 24, 2018').getTime(),
     location: {
@@ -318,7 +318,7 @@ const confs2018 = [
       country: 'USA',
       continent: 'North America',
     },
-    cfpDeadline: new Date('January 24, 2018').getTime(),
+    cfpDeadline: false,
     travel: false,
     coc: false,
   },
