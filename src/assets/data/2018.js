@@ -307,6 +307,22 @@ const confs2018 = [
     coc: 'https://devnexus.com/code-of-conduct',
   },
   {
+    name: 'Activate Conference',
+    link: 'https://activateconf.com/',
+    organization: true,
+    startDate: new Date('February 22, 2018').getTime(),
+    endDate: new Date('February 24, 2018').getTime(),
+    location: {
+      city: 'Baton Rouge',
+      state: 'LA',
+      country: 'USA',
+      continent: 'North America',
+    },
+    cfpDeadline: new Date('January 24, 2018').getTime(),
+    travel: false,
+    coc: false,
+  },
+  {
     name: 'LoopConf',
     link: 'https://loopconf.com/',
     organization: false,
