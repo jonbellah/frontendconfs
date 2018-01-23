@@ -119,9 +119,9 @@ const june = [
     endDate: new Date('June 22, 2018').getTime(),
     location: {
       city: 'Denver',
-      state: false,
-      country: 'Colorado',
-      continent: 'United States',
+      state: 'CO',
+      country: 'USA',
+      continent: 'North America',
     },
     cfpDeadline: new Date('March 15, 2018').getTime(),
     travel: 'Yes',
