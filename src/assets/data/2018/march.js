@@ -64,6 +64,22 @@ const march = [
     coc: 'https://confoo.ca/en/code-of-conduct',
   },
   {
+    name: 'ReactFest',
+    link: 'https://reactfest.uk/',
+    organization: false,
+    startDate: new Date('March 9, 2018').getTime(),
+    endDate: new Date('March 9, 2018').getTime(),
+    location: {
+      city: 'London',
+      state: false,
+      country: 'United Kingdom',
+      continent: 'Europe',
+    },
+    cfpDeadline: false,
+    travel: false,
+    coc: 'https://reactfest.uk/reactfest-code-of-conduct',
+  },
+  {
     name: 'EmberConf',
     link: 'http://emberconf.com/',
     organization: 'Tilde, Inc.',
