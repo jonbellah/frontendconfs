@@ -1,4 +1,3 @@
-import confs2017 from './2017';
 import confs2018 from './2018';
 
 const emptyArray = [];
